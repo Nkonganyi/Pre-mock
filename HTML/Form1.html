@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="Form1.css"> </head>
+<body>
+
+    <h1>Registration Form</h1>
+
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+
+        <label for="fatherName">Father Name:</label>
+        <input type="text" id="fatherName" name="fatherName" required><br><br>
+
+        <label for="dateOfBirth">Date of Birth:</label>
+        <input type="date" id="dateOfBirth" name="dateOfBirth" required><br><br>
+
+        <label for="tel">Tel:</label>
+        <input type="tel" id="tel" name="tel" required><br><br>
+
+        <label for="highSchoolName">High School Name:</label>
+        <input type="text" id="highSchoolName" name="highSchoolName" required><br><br>
+
+        <label for="permanentAddress">Permanent Address:</label>
+        <textarea id="permanentAddress" name="permanentAddress" required></textarea><br><br>
+
+        <label for="level">Your Level:</label>
+        <select id="level" name="level" required>
+            <option value="">Select Level</option>
+            <option value="1st Year">200</option>
+            <option value="2nd Year">300</option>
+            <option value="3rd Year">400</option>
+        </select><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="degreeProgram">Degree Program:</label>
+        <select id="degreeProgram" name="degreeProgram" required>
+            <option value="">Select Program</option>
+            <option value="BS in Pre-Med Physics">BS in Pre-Med Physics</option>
+            <option value="Other Program">Other Program</option>
+        </select><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+</html>
